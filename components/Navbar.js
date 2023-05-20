@@ -54,7 +54,11 @@ export default function TreatmentsDropdown() {
     const handleClickaw = () => {
         window.location.href = redirectUrlaw;
     }
+    const redirectUrldoc = ' https://altius-tan.vercel.app/doctor';
 
+    const handleClickdoc = () => {
+        window.location.href = redirectUrldoc;
+    }
 
     // -------------------Treatments-----------------------//
 
@@ -655,7 +659,7 @@ export default function TreatmentsDropdown() {
                                         />
                                         
                                         Yelahanka</NavDropdown.Item>
-                                    <NavDropdown.Item onClick={handleClickcsr} className={styles.containerItemlist} id="navbar-dropdown-item" href="#action/3.3">
+                                    <NavDropdown.Item onClick={handleClickdoc} className={styles.containerItemlist} id="navbar-dropdown-item" href="#action/3.3">
                                         <Image
                                             src="/images/navbar/Navbar Icon Temporary.png"
                                             alt="My Image"

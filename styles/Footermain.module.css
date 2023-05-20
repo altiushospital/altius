@@ -1,7 +1,5 @@
 .footer{
-    margin-bottom: -50px;
-    padding-bottom: 10px;
-    padding-top: 50px;
+    padding-top: 20px;
     background-color: #192A48;
 
 }
@@ -42,7 +40,7 @@
 }
 .containerlogo{
     margin-left: 50px;
-    margin-bottom: 50px;
+    
     margin-right: 50px;
 }
 
@@ -109,7 +107,21 @@
     margin-bottom: 50px;
     margin-right: 100px;
   }
-  
+  .copyrightwrap{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    margin-top: -50px;
+    
+  }
+  .socialMediaIcons{
+    display:flex;
+    justify-content: space-around;
+    margin-right: 150px;
+  }
+  .icons{
+    margin-left:20px;
+  }
 @media (max-width: 550px) {
     .containerpara{
         font-size: 15px;
