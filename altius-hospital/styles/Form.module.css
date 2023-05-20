@@ -1,0 +1,36 @@
+
+.sliderform{
+    width:600px;
+    margin: 80px 150px 80px 50px;
+    
+}
+.sliderformtxt{
+    margin-top:20px;
+    border-color: black;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-radius: 7px;
+    border-style: solid;
+    font-family: "Poppins",sans-serif;
+}
+.sliderbtn{
+    background-color: #FF8630;
+    width: 100%;
+    margin-top: 20px;
+    padding:10px 0;
+    border-radius: 5px;
+    font-family: "Poppins",sans-serif;
+}
+.headingwrap{
+    font-size: 35px;
+    font-family: "Poppins",sans-serif;
+    text-align: centre;
+    width: 500px;
+    margin: 150px 50px 150px 200px;
+    color:#FF8630
+}
+.containerwrap{
+    margin-top: -300px;
+    display: flex;
+    background-color: rgb(240, 238, 238);
+}

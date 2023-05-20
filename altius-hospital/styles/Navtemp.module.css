@@ -1,0 +1,8 @@
+.navbardropdownitem{
+    display: flex;
+    align-items: center;
+}
+
+.navbardropdownitem img{
+    margin-right: 8px;
+}

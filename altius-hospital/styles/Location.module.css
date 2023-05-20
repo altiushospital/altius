@@ -1,0 +1,128 @@
+
+.locationwrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    
+}
+.locationwrap{
+    background-color: #192A48;
+    padding: 50px ;
+    margin-top: 50px;
+    border-radius: 5px;
+    color:white;
+    
+}
+.location{
+    padding-bottom: 5px;
+    text-shadow: 0 5px 10px rgba(0,0,0,.4);
+    font-size: 20px;
+}
+
+.btnD{
+    padding:15px 35px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #FF8630;
+}
+.btnD:hover{
+  
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color:#FF8630;
+    box-shadow: 0 5px 10px rgba(0,0,0,.4);
+}
+.locationimg{
+    background-color: #FF8630;
+    border-radius: 50%;
+    margin-bottom:20px;
+    width: 40px;
+}
+.containerheading{
+    text-align: center;
+    padding-bottom: 15px;
+    color:#eb4c87;
+    text-shadow: 0 5px 10px rgba(0,0,0,.5);
+    font-size: 50px;
+
+}
+
+.details{
+    font-size: 15px;
+}
+.contactno{
+    font-weight: bold;
+}
+
+@media (max-width: 550px) {
+    .line{
+        width: 350px;
+        margin-left: 50px;
+      }
+      .locationwrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    .locationwrap{
+        background-color: #192A48;
+        padding: 50px ;
+        margin-top: 50px;
+        
+        border-radius: 15px;
+        color:white;
+        
+    }
+  }
+
+  @media (max-width: 450px) {
+    .line{
+        
+        width: 350px !important;
+        margin-left: 30px !important;
+      
+    }
+      .locationwrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 5px;
+        
+    }
+    .locationwrap{
+        background-color: #192A48;
+        padding: 50px ;
+        margin-top: 50px;
+        
+        border-radius: 15px;
+        color:white;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .line{
+        width: 250px;
+        margin-left: 30px;
+      }
+      .locationwrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    .locationwrap{
+        background-color: #192A48;
+        padding: 50px ;
+        margin-top: 50px;
+        
+        border-radius: 15px;
+        color:white;
+        
+    }
+  }

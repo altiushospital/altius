@@ -1,0 +1,63 @@
+.bannerwrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .contentWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .textWrap {
+    flex: 1;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 100px;
+  }
+  
+  .imageWrap {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .bannerheader {
+    font-family: "Poppins",sans-serif;
+    color:#FF8630;
+  }
+  
+  .boxp {
+    margin-top: 30px;
+   
+    line-height: 2;
+    font-family: "Poppins",sans-serif;
+    font-size: 18px;
+    color: rgb(123, 120, 120);
+  }
+  
+  .bannerimg {
+    margin-right: 150px;
+  }
+  .containerbtnwrap{
+    margin-top: 80px;
+  }
+  .containerbtns{
+    padding: 15px 50px;
+    border-radius:2px;
+    background-color:#FF8630;
+    color:white;
+    font-weight: bold;
+    font-family: "Poppins",sans-serif;
+}
+
+.containerbtns:hover{
+  background-color: #192A48;
+  box-shadow: 0 0 10px 0px grey;
+  color: white;
+  
+}
+  

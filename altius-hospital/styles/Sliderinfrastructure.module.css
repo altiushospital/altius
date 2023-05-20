@@ -1,0 +1,34 @@
+.carouselItem {
+    margin-left: -50px; /* Adjust the value as per your requirement */
+    margin-right: -50px; /* Adjust the value as per your requirement */
+  }
+  
+  .carouselImage {
+    margin-left: 10px; /* Adjust the value as per your requirement */
+    margin-right: 10px; /* Adjust the value as per your requirement */
+  }
+  
+  .carouselControlIcon {
+    margin-left: 50px; 
+    margin-right: -50px;
+  }
+  .carouselControlIconleft
+  {
+    margin-left: -50px; 
+    margin-right: 50px;
+  }
+  .containerbtnwrap{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+  .morebtn{
+    padding:15px 30px;
+    background-color: #FF8630;
+    color: #fcfbfc;
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: "Poppins",sans-serif;
+  }

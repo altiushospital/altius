@@ -1,0 +1,188 @@
+.containerpara {
+    max-height: 200px !important; /* Set a maximum height for the container */
+    overflow-y: auto !important; /* Enable vertical scrollbar when content exceeds container height */
+    scrollbar-width: thin !important; /* Set the width of the scrollbar */
+    scrollbar-color:#f2f2f2 #FF8630 !important; 
+  }
+  
+  /* Customize the scrollbar appearance (optional) */
+  .containerpara::-webkit-scrollbar {
+    width: 5px !important; /* Set the width of the scrollbar */
+  }
+  
+  .containerpara::-webkit-scrollbar-thumb {
+    background-color: #f2f2f2 !important; /* Set the color of the scrollbar thumb */
+    border-radius: 4px; /* Set the border radius of the scrollbar thumb */
+  }
+  
+  .containerpara::-webkit-scrollbar-thumb:hover {
+    background-color: #f2f2f2 !important; /* Set the color of the scrollbar thumb on hover */
+  }
+  
+  .containerpara::-webkit-scrollbar-track {
+    background-color:  #FF8630 !important; /* Set the color of the scrollbar track */
+    border-radius: 4px !important; /* Set the border radius of the scrollbar track */
+  }
+  
+.aboutwrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px;
+    width:1000px;
+    height: 400px !important;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+}
+.containerlogo{
+    height:280px !important;
+}
+.containerlogowrap{
+    background-color: white;
+   
+    border-radius: 30px;
+    margin-right: -60px;
+    position: relative;
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.05);
+}
+
+.containerheadwrap{
+    background-color: #f6bb90;
+    padding: 50px 70px;
+    border-radius: 70px;
+}
+.containerhead{
+    margin-left: 50px;
+    margin-bottom: 30px;
+    font-family: "Poppins",sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+.containerpara{
+    margin-left: 50px;
+}
+.containerbtnwrap{
+    margin-left: 50px;
+}
+.containerbtns{
+    padding:10px 25px;
+    border-radius: 5px;
+    background-color: #FF8630;
+    color:white;
+    font-family: "Poppins",sans-serif;
+}
+.containerbtns:hover{
+
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+@media (max-width: 550px){
+    .aboutwrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+        width:1000px;
+        height: 500px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+       
+        
+    }
+    /* .containerlogo{
+        height:100px;
+        width:120px;
+       
+    } */
+    .containerheadwrap{
+        background-color: #eb4c87;
+        padding: 10px 20px;
+        border-radius: 70px;
+        width: 400px;
+        height: 400px;
+        margin-right: 520px;
+        margin-top: -30px;
+        
+    }
+    .containerlogowrap{
+        background-color: white;
+        padding: 2px 10px;
+        border-radius: 30px;
+        margin-left: 0px;
+        margin-right: 820px;
+        position: relative;
+    }
+    .containerpara{
+        text-align: center;
+        margin-left: 0px;
+        font-size: 12px;
+    }
+    .containerhead{
+        text-align: center;
+        margin-left: 0px;
+    }
+    .containerbtnwrap{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 450px){
+    .aboutwrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+        width:1000px;
+        height: 500px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        
+        
+    }
+    /* .containerlogo{
+        height:80px;
+        width:100px;
+       
+    } */
+    .containerheadwrap{
+        background-color: #eb4c87;
+        padding: 10px;
+        border-radius: 70px;
+        width: 350px;
+        height: 400px;
+        margin-right: 580px;
+        margin-top: -30px;
+        
+    }
+    .containerlogowrap{
+        background-color: white;
+        padding: 2px 10px;
+        border-radius: 30px;
+        margin-left: 0px;
+        margin-right: 860px;
+        position: relative;
+    }
+    .containerpara{
+        text-align: center;
+        margin-left: 0px;
+        font-size: 10px;
+    }
+    .containerhead{
+        text-align: center;
+        margin-left: 0px;
+    }
+    .containerbtnwrap{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        margin-left: 0px;
+    }
+}
