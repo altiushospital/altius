@@ -39,7 +39,7 @@ const Banner2 = () => {
       }
   
       fetchCarouselImages();
-    }, []);
+    },[graphcms]);
 
   return (
     <div className={styles.bannerwrap}>
