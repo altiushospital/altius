@@ -78,7 +78,7 @@ const Banner2 = () => {
                             <p className={styles.pwrap}>Professional Staff</p>
                         </span>
                         <span className={styles.spanwrap}>
-                            <Image src="/images/navbar/Navbar Icon Temporary.png" alt="My Image" width={50} height={40} className={styles.containerimg} />
+                          <Image src="/images/navbar/Navbar Icon Temporary.png" alt="My Image" width={50} height={40} className={styles.containerimg} />
                             <p className={styles.pwrap}>24/7 Customer Service</p>
                         </span>
 

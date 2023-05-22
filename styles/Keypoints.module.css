@@ -40,10 +40,6 @@
 }
 
 
-.imgkeypoint{
-    height: 80px !important;
-    
-}
 .imgkeywrap{
     display:flex;
     align-items: center;

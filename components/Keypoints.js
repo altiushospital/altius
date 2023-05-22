@@ -20,8 +20,8 @@ const Keypoints = () => {
               src="/images/logo/ct-scan.png"
               className={styles.imgkeypoint}
               alt="My image"
-              height={80}
-              width={80}
+              height={50}
+              width={50}
 
             />
           </div>
@@ -36,8 +36,8 @@ const Keypoints = () => {
               src="/images/logo/cardiac-sciences.png"
               className={styles.imgkeypoint}
               alt="My image"
-              height={80}
-              width={80}
+              height={50}
+              width={50}
 
             />
           </div>
@@ -52,8 +52,8 @@ const Keypoints = () => {
               src="/images/logo/neuro.png"
               className={styles.imgkeypoint}
               alt="My image"
-              height={80}
-              width={80}
+              height={50}
+              width={50}
 
             />
           </div>
@@ -68,8 +68,8 @@ const Keypoints = () => {
               src="/images/logo/oncology.png"
               className={styles.imgkeypoint}
               alt="My image"
-              height={80}
-              width={80}
+              height={50}
+              width={50}
 
             />
           </div>
@@ -84,8 +84,8 @@ const Keypoints = () => {
               src="/images/logo/laparoscopy.png"
               className={styles.imgkeypoint}
               alt="My image"
-              height={80}
-              width={80}
+              height={50}
+              width={50}
 
             />
           </div>
@@ -100,8 +100,8 @@ const Keypoints = () => {
               src="/images/logo/orthopedics.png"
               className={styles.imgkeypoint}
               alt="My image"
-              height={80}
-              width={80}
+              height={50}
+              width={50}
 
             />
           </div>

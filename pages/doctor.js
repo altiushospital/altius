@@ -4,6 +4,7 @@ import Image from 'next/image';
 import styles from '../styles/DoctorCarousel.module.css';
 import TreatmentsDropdown from '@/components/Navbar'
 import Aboutus from '@/components/Aboutus'
+import Link from 'next/link';
 
 const Home = ({ doctors }) => {
   console.log(doctors)
@@ -20,7 +21,7 @@ const Home = ({ doctors }) => {
           doctors.map((doctors) => (
             <div key={doctors.id} className={styles.wrapper}>
               <div>
-              <Image src={doctors&& doctors.image && doctors.image[0].url ||""} className={styles.imgd} alt="slide_image" height={180} width={200}/>
+              <Image src={doctors&& doctors.image && doctors.image.url ||""} className={styles.imgd} alt="slide_image" height={180} width={200}/>
 
               </div>
               
@@ -30,7 +31,9 @@ const Home = ({ doctors }) => {
                   <p className={styles.drdetails}>{doctors.designation}</p>
                   <p className={styles.dredu}>{doctors.education}</p>
                 </section>
-                <button className={styles.btnD}>Book Appointment</button>
+                <Link href={`/doctors/${doctors.id}`}>
+                  <button className={styles.btnD}>Book Appointment</button>
+                </Link>
               </div>
             </div>
           ))}
