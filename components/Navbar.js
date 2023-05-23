@@ -197,7 +197,7 @@ export default function TreatmentsDropdown() {
                 <Container className={styles.containerwrap}>
                     {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
                    <div className={styles.logowrap}>
-                        <Link className={styles.containerlinklogo} href="https://altius-fertility-hospital.vercel.app/">
+                        <Link className={styles.containerlinklogo} href="https://altius-tan.vercel.app/">
                             <Image
                                 src="/images/logo/Altius-logo.png"
                                 alt="My Image"

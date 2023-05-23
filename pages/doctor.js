@@ -29,7 +29,7 @@ const Home = ({ doctors }) => {
                 <section className={styles.drwrap}>
                   <h1 className={styles.drname}>{doctors.name}</h1>
                   <p className={styles.drdetails}>{doctors.designation}</p>
-                  <p className={styles.dredu}>{doctors.education}</p>
+                  
                 </section>
                 <Link href={`/doctors/${doctors.id}`}>
                   <button className={styles.btnD}>Book Appointment</button>

@@ -49,10 +49,17 @@ height: 180px;
 font-size: 12px;
 font-family: Poppins,sans-serif;
   }
+  .drdetails{
+    font-size: 15px;
+    font-family: Poppins,sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+  }
   .drname{
     font-family: Poppins,sans-serif;
     font-size: 25px;
     font-weight: bold;
+    color: #FF8630;
   }
 
   .btnD{
@@ -67,6 +74,37 @@ font-family: Poppins,sans-serif;
   .btnD:hover{
     background-color: white;
     color:#FF8630;
+  }
+  /*------------------- Location------------------- */
+  .locationwrap{
+    display:flex;
+    flex-direction: column;
+    align-items:left;
+    justify-content:space-around;
+    margin-top:30px;
+   margin-left: 160px;
+  }
+  .locationimgwrap{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    margin-top:100px;
+  }
+  .locationp{
+      text-align: justify;
+      margin-right: 11%;
+      margin-top: 10px;
+      line-height: 2;
+      font-size: 18px;
+      font-family: "Poppins",sans-serif;
+      color: grey;
+ 
+  }
+  .locationhead{
+    font-family: Poppins,sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #FF8630;
   }
   @media (max-width: 1200px) {
     .swipewrapper
@@ -110,6 +148,7 @@ font-family: Poppins,sans-serif;
           font-family: Poppins,sans-serif;
           font-size: 15px;
           font-weight: bold;
+          color: #FF8630;
         }
         .drdetailswrap{
           text-align:center;
@@ -168,6 +207,7 @@ font-family: Poppins,sans-serif;
           font-family: Poppins,sans-serif;
           font-size: 15px;
           font-weight: bold;
+          color: #FF8630;
         }
         .drdetailswrap{
           text-align:center;
