@@ -4,7 +4,12 @@ import { gql, GraphQLClient } from 'graphql-request';
 import Image from 'next/image';
 import styles from '../styles/DoctorCarousel.module.css';
 import TreatmentsDropdown from '@/components/Navbar'
+import Keypoints from '@/components/Keypoints'
+import Form from '@/components/Form'
+import Footermain from '@/components/Footermain'
 import Aboutus from '@/components/Aboutus'
+import Socialmedia from '@/components/Socialmedia'
+import Map from '@/components/Map'
 import Link from 'next/link';
 
 const HBRLayoutPage = ({ doctors }) => {
@@ -16,12 +21,25 @@ const HBRLayoutPage = ({ doctors }) => {
   }, [doctors]);
 
   return (
+    <>
     <div>
-      <h1 className={styles.header}>Our Doctors</h1>
+        <TreatmentsDropdown/>
+
+      <h1 className={styles.header}>Yelahanka</h1>
       
+      <div className={styles.locationimgwrap}>
+            <Image src="/images/img/banner/yelahanka.jpeg" className={styles.locationimg}  alt="hbr" height={500} width={1200}/>
+            </div>
+        <div className={styles.locationwrap}>
+      <h1 className={styles.locationhead}>{"Yelahanka- Bangalore"}</h1>
+      <p className={styles.locationp}>{"Altius Hospitals is a world-class chain of multi-specialty hospitals operating across Bangalore that aims to treat people, not diseases.  Altius Hospital at HBR layout combines the best medical professionals along with cutting-edge technology in providing the best medical care. Over the last 18+ years, it has evolved as a leader in the healthcare system because of its integrated model that combines all services under one roof. From Cardiology to 24/7 emergency care, dialysis treatment, and outpatient treatments, we offer all.  Altius Hospitals has a network of highly skilled and experienced medical professionals in Bangalore who provide compassionate care while demonstrating exceptional knowledge.  The hospitals are well equipped with the latest diagnostic labs, facilities, and modern technologies to provide the best medical services."}</p>
+      </div>
+      <Keypoints/>
       <div className={styles.container}>
+      <h1 className={styles.locationhead}>{"Doctors"}</h1>
         {filteredDoctors.map((doctor, index) => (
           <div key={index} className={styles.wrapper}>
+            
             <div>
             <Image src={doctor.image.url} className={styles.imgd}  alt={doctor.name} height={180} width={200}/>
             </div>
@@ -38,6 +56,11 @@ const HBRLayoutPage = ({ doctors }) => {
         ))}
       </div>
     </div>
+    <Map/>
+    <Aboutus/>
+    <Socialmedia/>
+    <Footermain/>
+    </>
   );
 };
 

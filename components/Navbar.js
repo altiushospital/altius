@@ -54,11 +54,6 @@ export default function TreatmentsDropdown() {
     const handleClickaw = () => {
         window.location.href = redirectUrlaw;
     }
-    const redirectUrldoc = ' https://altius-tan.vercel.app/doctor';
-
-    const handleClickdoc = () => {
-        window.location.href = redirectUrldoc;
-    }
 
     // -------------------Treatments-----------------------//
 
@@ -174,6 +169,35 @@ export default function TreatmentsDropdown() {
     const handleClickst = () => {
         window.location.href = redirectUrlst;
     }
+    //-----------------Location-------------------//
+
+
+    const redirectUrlhbr = 'https://altius-tan.vercel.app/hbr-layout';
+    
+    const handleClickhbr = () => {
+        window.location.href = redirectUrlhbr;
+    }
+    const redirectUrlr = 'https://altius-tan.vercel.app/rajajinagar';
+    
+    const handleClickr = () => {
+        window.location.href = redirectUrlr;
+    }
+    const redirectUrlrr = 'https://altius-tan.vercel.app/rajarajeshwari-nagar';
+    
+    const handleClickrr = () => {
+        window.location.href = redirectUrlrr;
+    }
+    const redirectUrly = 'https://altius-tan.vercel.app/yelahanka';
+    
+    const handleClicky = () => {
+        window.location.href = redirectUrly;
+    }
+    const redirectUrldoc = ' https://altius-tan.vercel.app/doctor';
+
+    const handleClickdoc = () => {
+        window.location.href = redirectUrldoc;
+    }
+
 
     // ------------- resources--------------//
 
@@ -341,7 +365,7 @@ export default function TreatmentsDropdown() {
                                             className={styles.containerimg}
                                         />
                                         
-                                        Cosmetology & Plastic Surgery
+                                        Cosmetology &<br/> Plastic Surgery
                                     </NavDropdown.Item>
                                     <NavDropdown.Item onClick={handleClickm} className={styles.containerItemlist} id="navbar-dropdown-item" href="#action/3.1">
                                         <Image
@@ -437,7 +461,7 @@ export default function TreatmentsDropdown() {
                                             className={styles.containerimg}
                                         />
                                         
-                                        General & 3D Laparoscopic Surgery
+                                        General & 3D <br/>Laparoscopic Surgery
                                     </NavDropdown.Item>
                                     <NavDropdown.Item onClick={handleClickaw} className={styles.containerItemlist} id="navbar-dropdown-item" href="#action/3.4">
                                         <Image
@@ -618,7 +642,7 @@ export default function TreatmentsDropdown() {
 
                                 <NavDropdown className={styles.containertitle} title="Locations" id="basicnavdropdown">
                                 <div className={styles.containerItemgridding}>
-                                    <NavDropdown.Item onClick={handleClickm} className={styles.containerItemlist} id="navbar-dropdown-item" href="#action/3.1">
+                                    <NavDropdown.Item onClick={handleClickhbr} className={styles.containerItemlist} id="navbar-dropdown-item" href="#action/3.1">
                                         <Image
                                             src="/images/navbar/Navbar Icon Temporary.png"
                                             alt="My Image"
@@ -628,7 +652,7 @@ export default function TreatmentsDropdown() {
                                         />
                                         
                                         HBR Layout</NavDropdown.Item>
-                                        <NavDropdown.Item onClick={handleClickm} className={styles.containerItemlist} id="navbar-dropdown-item" href="#action/3.1">
+                                        <NavDropdown.Item onClick={handleClickr} className={styles.containerItemlist} id="navbar-dropdown-item" href="#action/3.1">
                                         <Image
                                             src="/images/navbar/Navbar Icon Temporary.png"
                                             alt="My Image"
@@ -638,7 +662,7 @@ export default function TreatmentsDropdown() {
                                         />
                                         
                                         Rajajinagar</NavDropdown.Item>
-                                    <NavDropdown.Item onClick={handleClickvm} className={styles.containerItemlist} id="navbar-dropdown-item" href="#action/3.2">
+                                    <NavDropdown.Item onClick={handleClickrr} className={styles.containerItemlist} id="navbar-dropdown-item" href="#action/3.2">
                                         <Image
                                             src="/images/navbar/Navbar Icon Temporary.png"
                                             alt="My Image"
@@ -649,7 +673,7 @@ export default function TreatmentsDropdown() {
                                         
                                         Rajarajeshwari Nagar
                                     </NavDropdown.Item>
-                                    <NavDropdown.Item onClick={handleClickm} className={styles.containerItemlist} id="navbar-dropdown-item" href="#action/3.1">
+                                    <NavDropdown.Item onClick={handleClicky} className={styles.containerItemlist} id="navbar-dropdown-item" href="#action/3.1">
                                         <Image
                                             src="/images/navbar/Navbar Icon Temporary.png"
                                             alt="My Image"
@@ -674,6 +698,7 @@ export default function TreatmentsDropdown() {
                                 </NavDropdown>
                                 {/*---------------- Resources-------------- */}
                                 <NavDropdown className={styles.containertitle} title="Resources" id="basic-nav-dropdown">
+                                    <div></div>
                                
                                     <NavDropdown.Item onClick={handleClickb} className={styles.containerItemlist} id="navbar-dropdown-item" href="#action/3.1">
                                         <Image

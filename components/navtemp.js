@@ -1,61 +1,109 @@
-import React from 'react';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import Image from 'next/image';
+import React, { useState } from 'react';
+import { NavDropdown } from 'react-bootstrap';
 import styles from '../styles/Navtemp.module.css';
-const MyNavbar = () => {
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import { Transition } from "@headlessui/react";
+import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
+import Link from "next/link";
+import Image from 'next/image'
+
+const Navbart = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <Navbar bg="light" expand="lg">
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <NavDropdown title={
-            <span>
-              
-              {' About Us'}
-            </span>
-          } id="about-us-dropdown">
-            <div>
-              <NavDropdown.Item href="#action/3.1" className="navbar-dropdown-item">
-                <Image src="/images/navbar/Navbar Icon Temporary.png" alt="About Us" width={20} height={20} />
-                Item 1
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2" className="navbar-dropdown-item">
-                <Image src="/images/navbar/Navbar Icon Temporary.png" alt="About Us" width={20} height={20} />
-                Item 2
-              </NavDropdown.Item>
+    <>
+    <nav className={styles.nav}>
+      <div className="logo">
+        <h1>Logo</h1>
+      </div>
+
+      <div className={`menu ${isOpen ? 'show' : ''}`}>
+        <ul className={styles.ul}>
+          <li>
+            <Link href="#">About Us</Link>
+            <div  className={styles.dropdown}>
+              <ul  className={styles.grid}>
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
+                <li>Option 4</li>
+              </ul>
             </div>
-          </NavDropdown>
-
-          <NavDropdown title={
-            <span>
-              
-              {' Specialties'}
-            </span>
-          } id="specialties-dropdown">
-            <div>
-              <NavDropdown.Item href="#action/3.3" className="navbar-dropdown-item">
-                Item 3
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4" className="navbar-dropdown-item">
-                Item 4
-              </NavDropdown.Item>
+          </li>
+          <li>
+            <Link href="#">Specialities</Link>
+            <div  className={styles.dropdown}>
+              <ul  className={styles.grid}>
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
+                <li>Option 4</li>
+              </ul>
             </div>
-          </NavDropdown>
-        </Nav>
-      </Navbar.Collapse>
+          </li>
+          <li>
+            <Link href="#">Care Services</Link>
+            <div  className={styles.dropdown}>
+              <ul  className={styles.grid}>
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
+                <li>Option 4</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <Link href="#">Value Adds</Link>
+            <div  className={styles.dropdown}>
+              <ul  className={styles.grid}>
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
+                <li>Option 4</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <Link href="#">Locations</Link>
+            <div  className={styles.dropdown}>
+              <ul  className={styles.grid}>
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
+                <li>Option 4</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <Link href="#">Resources</Link>
+            <div  className={styles.dropdown}>
+              <ul  className={styles.grid}>
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
+                <li>Option 4</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-      <style jsx global>{`
-        .navbar-dropdown-item {
-          display: flex;
-          align-items: center;
-        }
+      <button className="toggle-button" onClick={toggleNavbar}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-        .navbar-dropdown-item img {
-          margin-right: 8px;
-        }
-      `}</style>
-    </Navbar>
+    </nav>
+    </>
   );
 };
 
-export default MyNavbar;
+export default Navbart;

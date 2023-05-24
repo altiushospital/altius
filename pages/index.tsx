@@ -1,8 +1,7 @@
 import { gql, GraphQLClient } from 'graphql-request'
 
 import TreatmentsDropdown from '@/components/Navbar'
-
-
+import Navbart from '@/components/navtemp'
 import CarouselSlider from '@/components/Carousel'
 import Banner from '@/components/Banner'
 import Banner2 from '@/components/Banner2'
@@ -39,6 +38,7 @@ const Home = () => {
   return (
 
     <div>
+      
       <TreatmentsDropdown/>
       <CarouselSlider/>
        <Banner/>

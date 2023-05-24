@@ -1,0 +1,50 @@
+.wrap{
+    display:flex;
+    justify-content:space-around;
+    margin:50px 150px 100px 150px;
+}
+.formwrap{
+    background-color: white;
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.05);
+}
+.formhead{
+    color: #FF8630;
+    font-weight: bold;
+    font-family: "Poppins",sans-serif;
+}
+.formspan{
+    font-size: 17px !important;
+    font-weight: 400;
+}
+.gmap{
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+    padding-bottom: 50px;
+  
+    }
+
+    .sliderform{
+        width:500px;
+        margin: 30px;
+        
+    }
+    .sliderformtxt{
+        margin-top:20px;
+        border-color: black;
+        box-sizing: border-box;
+        border-width: 1px;
+        border-radius: 7px;
+        border-style: solid;
+        font-family: "Poppins",sans-serif;
+    }
+    .sliderbtn{
+        background-color: #FF8630;
+        color: white;
+        width: 100%;
+        margin-top: 20px;
+        padding:10px 0;
+        border-radius: 5px;
+        font-family: "Poppins",sans-serif;
+    }

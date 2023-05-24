@@ -8,6 +8,8 @@ import Keypoints from '@/components/Keypoints'
 import Form from '@/components/Form'
 import Footermain from '@/components/Footermain'
 import Aboutus from '@/components/Aboutus'
+import Socialmedia from '@/components/Socialmedia'
+import Map from '@/components/Map'
 import Link from 'next/link';
 
 const HBRLayoutPage = ({ doctors }) => {
@@ -34,7 +36,7 @@ const HBRLayoutPage = ({ doctors }) => {
       </div>
       <Keypoints/>
       <div className={styles.container}>
-      <h1 className={styles.locationhead}>{"Doctor"}</h1>
+      <h1 className={styles.locationhead}>{"Doctors"}</h1>
         {filteredDoctors.map((doctor, index) => (
           <div key={index} className={styles.wrapper}>
             
@@ -54,7 +56,9 @@ const HBRLayoutPage = ({ doctors }) => {
         ))}
       </div>
     </div>
+    <Map/>
     <Aboutus/>
+    <Socialmedia/>
     <Footermain/>
     </>
   );

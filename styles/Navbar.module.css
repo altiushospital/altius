@@ -13,14 +13,15 @@
   }
   .containerItemlist{
     /* padding:5px 20px; */
-    width: max-content !important;
+    width: 250px !important;
+    height: 60px;
     text-align: flex-start !important ;
     
 }
 .containerItemlist:hover{
     background-color: rgb(244, 213, 188) !important;
-    width: max-content !important;
-    border-radius: 10px !important;
+    width: 250px !important;
+    border-radius: 20px !important;
 }
 
 .containerIteminfertility:hover{
@@ -39,6 +40,7 @@
 .containernav{
   background-color: white;
   height: 100px;
+  
 }
 
 
@@ -48,7 +50,7 @@
 
 .containerwrap{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-top:-30px;
    
@@ -56,7 +58,7 @@
 .containertitle{
     color:black !important;
     margin-left: 10px;
-    padding:5px;
+   
     font-family: "Poppins",sans-serif;
     
 }
@@ -102,8 +104,9 @@
   gap: 2rem;
   align-items: center;
   margin-left: 30px;
- 
+  
 }
+
 .containerbtnwrappers{
   display:flex;
   flex-direction: row;
@@ -130,9 +133,9 @@
 .containerItemgridding{
   display: grid;
   padding: 30px;
+  gap:1rem;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
-  align-items: center;
+  align-items: flex-start !important;
   margin-right: 10px;
  
 }
@@ -200,7 +203,7 @@
 }
 .containertitlewrap{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .containerbtns:hover{
@@ -257,7 +260,7 @@
 
 .containerwrap{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   top: -20px;
 }
@@ -280,7 +283,7 @@
 }
 .containerbtnwrappers{
   display:flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
   margin-left: 10px;
 
@@ -334,7 +337,7 @@
 }
 .containertitlewrap{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .containerbtns:hover{
@@ -392,7 +395,7 @@
 
 .containerwrap{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-right: 5px;
 }
@@ -416,7 +419,7 @@
 }
 .containerbtnwrappers{
   display:flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
   margin-left: 10px;
 

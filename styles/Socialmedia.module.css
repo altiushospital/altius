@@ -1,0 +1,14 @@
+.containerlogowrap{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width:200px;
+    margin-left: 44%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.containerhead{
+    text-align: center;
+    margin-top: 80px;
+    
+}
